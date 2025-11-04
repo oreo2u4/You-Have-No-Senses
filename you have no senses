@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Flicker Text</title>
+
+  <style>
+  
+  	@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+    
+    nav {
+    display: block;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    background: black;
+    padding: 1rem;
+    margin: 0;
+}
+
+#menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    font:"Anton", sans-serif;
+    display: block;
+    width: 100%;
+}
+
+#menu li {
+    display: inline-block;
+    margin-right: 0.1rem;
+}
+    
+    #menu li a {
+    color: cyan;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    text-decoration: none;
+    padding: 0.5rem;
+    font-weight: 200;
+}
+
+#menu li a:hover {
+    color: red;
+}
+    
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: black;
+      color: white;
+      font-family: "Anton", sans-serif;
+  	  font-weight: bold;
+  	  font-style: normal;
+      letter-spacing: 1rem;
+      text-align: center;
+      flex-direction: column;
+    }
+
+    h1 {
+      opacity: 0;
+      color: cyan;
+      position: absolute;
+      transition: opacity 0.5s ease;
+    }
+    
+    h2 {
+      opacity: 0;
+      color: red;
+      position: absolute;
+      transition: opacity 0.5s ease;
+    }
+
+    @keyframes flicker1 {
+      0%, 50% { opacity: 1; }
+      51%, 100% { opacity: 0; }
+    }
+    
+    @keyframes flicker2 {
+      0%, 50% { opacity: 0; }
+      51%, 100% { opacity: 1; }
+    }
+
+
+    h1 {
+      animation: flicker1 2s infinite;
+    }
+
+    h2 {
+      animation: flicker2 2s infinite;
+    }
+  </style>
+</head>
+
+
+<nav id="menu">
+  <ul>
+    <li id="home">
+      <a href="/" title="home">home</a>
+    </li>
+    <li><a href="">SIGHT</a></li>
+    <li><a href="">SOUND</a></li>
+    <li><a href="">SMELL</a></li>
+    <li><a href="">TASTE</a></li>
+    <li><a href="">TOUCH</a></li>
+  </ul>
+</nav>
+
+
+
+<body>
+  <h1>YOU HAVE NO SENSE</h1>
+  <h2>YOU HAVE NO SENSES</h2>
+</body>
+</html>
