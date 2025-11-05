@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Taste</title>
+
+ <!-- ======== Lightbox https://codepen.io/cjr85/pen/JjyGEbO  ======= -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.css"
+    integrity="sha512-Woz+DqWYJ51bpVk5Fv0yES/edIMXjj3Ynda+KWTIkGoynAMHrqTcDUQltbipuiaD5ymEo9520lyoVOo9jCQOCA=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+
+<style>
+	@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+    
+   nav {
+  display: block;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  background: black;
+  padding: 1rem;
+  margin: 0;
+  text-align: center;
+}
+
+#menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+}
+
+#menu li {
+    display: inline-block;
+    margin-right: 0.1rem;
+}
+    
+    #menu li a {
+    color: cyan;
+     font-family: "Anton", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    text-decoration: none;
+    padding: 1rem;
+    font-weight: 200;
+}
+
+#menu li a:hover {
+    color: red;
+}
+
+img {
+	display: block;
+    max-width: 1380px; 
+    height: auto;
+    margin: 0 auto;
+    }
+    
+</style>
+</head>
+<body>
+
+<nav id="menu">
+  <ul>
+    <li id="home">
+      <a href="/" title="home">home</a>
+    </li>
+    <li><a href="">SIGHT</a></li>
+    <li><a href="">SOUND</a></li>
+    <li><a href="">SMELL</a></li>
+    <li><a href="">TASTE</a></li>
+    <li><a href="">TOUCH</a></li>
+  </ul>
+</nav>
+
+<img src="https://i.imgur.com/sjjU7y9.png" usemap="#image-map">
+
+
+<map name="image-map">
+    <area href="https://i.imgur.com/IECoe7y.jpeg" data-lightbox="tastes" alt="food1" coords="419,449,711,511" shape="rect">
+    <area href="https://i.imgur.com/BjvMIXn.jpeg" data-lightbox="tastes" alt="food2" coords="415,562,714,623" shape="rect">
+    <area href="https://i.imgur.com/ZMGOqQn.jpeg" data-lightbox="tastes" alt="food3" coords="415,676,704,781" shape="rect">
+</map>
+
+<!-- Lightbox Script tag   -->
+  <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox-plus-jquery.js"
+      integrity="sha512-0rYcJjaqTGk43zviBim8AEjb8cjUKxwxCqo28py38JFKKBd35yPfNWmwoBLTYORC9j/COqldDc9/d1B7dhRYmg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+
+</body>
+</html>
