@@ -4,6 +4,47 @@
 <title>Sight</title>
 
 <style>
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+    
+   nav {
+  display: block;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  background: black;
+  padding: 1rem;
+  margin: 0;
+  text-align: center;
+}
+
+#menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+}
+
+#menu li {
+    display: inline-block;
+    margin-right: 0.1rem;
+}
+    
+    #menu li a {
+    color: cyan;
+     font-family: "Anton", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    text-decoration: none;
+    padding: 1rem;
+    font-weight: 200;
+}
+
+#menu li a:hover {
+    color: red;
+}
+
+
 
   * { box-sizing: border-box; }
 
@@ -55,37 +96,37 @@
     left: 35%;
     width: 320px;
     aspect-ratio: auto;
-    transform: translateZ(.25px) scale(.75) translateX(10%) translateY(50%);
+    transform: translateZ(.25px) scale(.75) translateX(100%) translateY(50%);
     box-shadow: 0 0 8px rgba(0, 0, 0, 0);
   }
 
  img:nth-of-type(2) {
-    transform: translateZ(.4px) scale(.6) translateX(-50%) translateY(-80%);
+    transform: translateZ(.7px) scale(.5) translateX(-100%) translateY(-90%);
     aspect-ratio: auto;
   }
   
 #slide1 img:first-of-type{
-    transform: translateZ(.4px) scale(.6) translateX(-100%) translateY(-50%);
+    transform: translateZ(.6px) scale(.4) translateX(160%) translateY(-50%);
     aspect-ratio: auto;
   }
   
 #slide1 img:last-of-type {
-    transform: translateZ(.4px) scale(.6) translateX(-100%) translateY(-60%);
+    transform: translateZ(.4px) scale(.6) translateX(-80%) translateY(-30%);
     aspect-ratio: auto;
   }
   
 #slide2 img:first-of-type{
-    transform: translateZ(.4px) scale(.6) translateX(-100%) translateY(50%);
+    transform: translateZ(.6px) scale(.6) translateX(-100%) translateY(50%);
     aspect-ratio: auto;
   }
   
 #slide2 img:last-of-type {
-    transform: translateZ(.4px) scale(.6) translateX(-90%) translateY(-50%);
+    transform: translateZ(.7px) scale(.7) translateX(70%) translateY(-50%);
     aspect-ratio: auto;
   }
   
 #slide3 img:first-of-type{
-    transform: translateZ(.4px) scale(.6) translateX(-80%) translateY(50%);
+    transform: translateZ(.4px) scale(.6) translateX(80%) translateY(-150%);
     aspect-ratio: auto;
   }
   
@@ -95,12 +136,12 @@
   }
   
 #slide4 img:first-of-type{
-    transform: translateZ(.4px) scale(.6) translateX(150%) translateY(-150%);
+    transform: translateZ(.4px) scale(.6) translateX(160%) translateY(-150%);
     aspect-ratio: auto;
   }
   
 #slide4 img:last-of-type {
-    transform: translateZ(.3px) scale(.9) translateX(-90%) translateY(-50%);
+    transform: translateZ(.3px) scale(1) translateX(-90%) translateY(-20%);
     aspect-ratio: auto;
   }
 
@@ -156,12 +197,12 @@
   }
 
   #slide3:before {
-    background-image: url("https://thunderdungeon.com/wp-content/uploads/2024/04/confusing-perspective-3-3-25-2024.jpg");
+    background-image: url("https://www.graphicdesignblog.org/wp-content/uploads/2011/01/visual-confusion-photography-5.jpg");
     transform: translateZ(-.5px) scale(1.5);
   }
 
   #slide4 {
-    background-image: url("https://i.pinimg.com/474x/46/dd/5d/46dd5ddd92bed04ccdc03486183b97d0.jpg");
+    background-image: url("https://cdn.architecturendesign.net/wp-content/uploads/2023/06/AD-Optical-Illusions-Confusing-Perspective-12.jpg");
     z-index:2;
   }
 
@@ -169,6 +210,19 @@
 
 </head>
 <body>
+
+<nav id="menu">
+  <ul>
+    <li id="home">
+      <a href="index.html" title="home">home</a>
+    </li>
+    <li><a href="sight.html">SIGHT</a></li>
+    <li><a href="sound.html">SOUND</a></li>
+    <li><a href="smell.html">SMELL</a></li>
+    <li><a href="taste.html">TASTE</a></li>
+
+  </ul>
+</nav>
 
   <div id="title" class="slide header">
     <h1>       </h1>
@@ -179,7 +233,7 @@
   <div id="slide1" class="slide">
     <div class="title">
     </div>
-    <img src="https://static.tumblr.com/od3ztre/G2doc8jzs/claes-oldenberg.jpg">
+    <img src="https://wl-brightside.cf.tsp.li/resize/728x/jpg/265/d9b/c3bd635421859fc89e235b8508.jpg">
     <img src="https://i.imgur.com/XJZMQy5.jpg"> 
   </div>
 
@@ -194,12 +248,12 @@
     <div class="title">
     </div>
     <img src="https://i.imgur.com/lFJOBha.jpeg">
-    <img src="https://pleated-jeans.com/wp-content/uploads/2025/09/unedited-optical-illusion-pictures-taken-from-very-confusing-perspectives-8.jpg"> 
+    <img src="https://thunderdungeon.com/wp-content/uploads/2024/04/confusing-perspective-3-3-25-2024.jpg"> 
   </div>
 
   <div id="slide4" class="slide header">
       <h1>    </h1>
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJVgk44NKOvuGNUtlLu8U19GYgtSNK8W4wvQ_ZDCx6z8_AplQ13F_zrcgKcQ3W_h_LHTg&usqp=CAU">
+    <img src="https://i.pinimg.com/474x/46/dd/5d/46dd5ddd92bed04ccdc03486183b97d0.jpg">
     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Impossible_cube_illusion_angle.svg/250px-Impossible_cube_illusion_angle.svg.png"> 
   </div>
 
