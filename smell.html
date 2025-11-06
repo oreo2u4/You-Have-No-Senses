@@ -1,1 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+
+<style>
+	@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+    
+   nav {
+  display: block;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  background: black;
+  padding: 1rem;
+  margin: 0;
+  text-align: center;
+}
+
+#menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+}
+
+#menu li {
+    display: inline-block;
+    margin-right: 0.1rem;
+}
+    
+    #menu li a {
+    color: cyan;
+     font-family: "Anton", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    text-decoration: none;
+    padding: 1rem;
+    font-weight: 200;
+}
+
+#menu li a:hover {
+    color: red;
+}
+
+ h1 {
+    text-align: center; 
+    margin-top: 50vh;
+    transform: translateY(-50%); 
+    font-family: "Anton", sans-serif;
+    text-transform: uppercase;
+    z-index: 500;
+    position: sticky;
+    color: white;
+    }
+    
+.background-flicker {
+ 	position: fixed;
+ 	top: 0;
+  	left: 0;
+	width: 100vw;
+ 	height: 100vh;
+  	z-index: -1;
+  	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+  	animation: flicker 60s infinite;
+}
+
+@keyframes flicker {
+  0%   { background-image: url('https://hips.hearstapps.com/hmg-prod/images/lumb-1624898136.jpeg'); }
+  10%  { background-image: url('https://images.stockcake.com/public/8/6/f/86f0dcce-533a-4d68-ada7-b2693ddb11f9_large/snowy-night-road-stockcake.jpg'); }
+  20%  { background-image: url('https://m.media-amazon.com/images/I/7194xWP6+nL._AC_UF894,1000_QL80_.jpg'); }
+  30%  { background-image: url('https://live.staticflickr.com/5321/30136650125_10b765a318_b.jpg'); }
+  40%  { background-image: url('https://guide-images.cdn.ifixit.com/igi/eigGcABJe1BP2MMG.medium'); }
+  50%  { background-image: url('https://i.redd.it/ebptx15o92o21.jpg'); }
+  60%  { background-image: url('https://static.diply.com/bdd3d263-7acd-434e-8dfd-b796396cd83a.jpg'); }
+  70%  { background-image: url('https://static.diply.com/f061dee9-d824-465e-a05e-155dc991f833.webp'); }
+  80%  { background-image: url('https://i.pinimg.com/originals/5f/0b/98/5f0b981dc061263bf41a27ba3e1ab553.jpg'); }
+  90%  { background-image: url('https://i.ebayimg.com/images/g/IGsAAOSwfN1kGKZu/s-l400.jpg'); }
+  100% { background-image: url('https://miro.medium.com/1*32BsJkhRDh7ocO5BMdDBAg.jpeg'); }
+}
+</style>
+</head>
+<body>
+
+<nav id="menu">
+  <ul>
+    <li id="home">
+      <a href="index.html" title="home">home</a>
+    </li>
+    <li><a href="sight.html">SIGHT</a></li>
+    <li><a href="sound.html">SOUND</a></li>
+    <li><a href="smell.html">SMELL</a></li>
+    <li><a href="taste.html">TASTE</a></li>
+
+  </ul>
+</nav>
+
+<div class="background-flicker"></div>
+
+<h1> why can you smell this? </h1>
+    	
+<div class="background"></div>
+
+</body>
+</html>
 
