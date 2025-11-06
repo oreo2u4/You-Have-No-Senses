@@ -1,1 +1,214 @@
-sight
+<!DOCTYPE html>
+<html>
+<head>
+<title>Sight</title>
+
+<style>
+
+  * { box-sizing: border-box; }
+
+  html {
+    height: 100%;
+    overflow: hidden;
+  }
+
+  body { 
+    margin:0;
+    padding:0;
+    perspective: 1px;
+    transform-style: preserve-3d;
+    height: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    font-family: Helvetica, Arial, sans-serif;
+  }
+
+  h1 {
+    font-size: 250%;
+    font-family: "Big Shoulders Text", Helvetica, sans-serif;
+    color: transparent;
+  }
+  
+  .header h1  {
+  	color: transparent;
+  }
+
+  p {
+    font-size: 1.1rem;
+    line-height: 140%;
+    color: transparent;
+  }
+
+  .slide {
+    position: relative;
+    padding: 25vh 10%;
+    min-height: 100vh;
+    width: 100vw;
+    box-shadow: 0 -1px 10px rgba(0, 0, 0, .7);
+      transform-style: inherit;
+  }
+
+  
+ img {
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    width: 320px;
+    aspect-ratio: auto;
+    transform: translateZ(.25px) scale(.75) translateX(10%) translateY(50%);
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0);
+  }
+
+ img:nth-of-type(2) {
+    transform: translateZ(.4px) scale(.6) translateX(-50%) translateY(-80%);
+    aspect-ratio: auto;
+  }
+  
+#slide1 img:first-of-type{
+    transform: translateZ(.4px) scale(.6) translateX(-100%) translateY(-50%);
+    aspect-ratio: auto;
+  }
+  
+#slide1 img:last-of-type {
+    transform: translateZ(.4px) scale(.6) translateX(-100%) translateY(-60%);
+    aspect-ratio: auto;
+  }
+  
+#slide2 img:first-of-type{
+    transform: translateZ(.4px) scale(.6) translateX(-100%) translateY(50%);
+    aspect-ratio: auto;
+  }
+  
+#slide2 img:last-of-type {
+    transform: translateZ(.4px) scale(.6) translateX(-90%) translateY(-50%);
+    aspect-ratio: auto;
+  }
+  
+#slide3 img:first-of-type{
+    transform: translateZ(.4px) scale(.6) translateX(-80%) translateY(50%);
+    aspect-ratio: auto;
+  }
+  
+#slide3 img:last-of-type {
+    transform: translateZ(.5px) scale(.6) translateX(-90%) translateY(-50%);
+    aspect-ratio: auto;
+  }
+  
+#slide4 img:first-of-type{
+    transform: translateZ(.4px) scale(.6) translateX(150%) translateY(-150%);
+    aspect-ratio: auto;
+  }
+  
+#slide4 img:last-of-type {
+    transform: translateZ(.3px) scale(.9) translateX(-90%) translateY(-50%);
+    aspect-ratio: auto;
+  }
+
+  .slide:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    box-shadow: 0 0 8px 1px rgba(0, 0, 0, .7);
+  }
+  
+  .slide:nth-child(2n) .title {
+    margin-left: 0;
+    margin-right: auto;
+  }
+
+  .slide:nth-child(2n+1) .title {
+    margin-left: auto;
+    margin-right: 0;
+  }
+
+  .slide, .slide:before {
+    background: 50% 50% / cover;  
+  }
+
+  #title {
+    background-image: url("https://121clicks.com/wp-content/uploads/2021/10/confusing_perspective_images_pt2_featured.jpg");
+    z-index:2;
+    max-height: 100vh;
+  }
+
+  #title h1 {
+    transform: translateZ(.25px) scale(.5);
+    transform-origin: 50% 0%;
+    text-indent: -500rem;
+    aspect-ratio: 16.5 / 9;
+    background: url(/tutorials/i/pure-css-parallax-logo-1280x687px.png) no-repeat 0 50%;
+    background-size: cover;
+    display: block;
+    font-size: 0;
+  }
+
+  #slide1:before {
+    background-image: url("https://www.artofplay.com/cdn/shop/articles/duck-rabbit.jpg?v=1473375955&width=1024");
+    transform: translateZ(-1px) scale(2);
+  }
+
+  #slide2 {
+    background-image: url("https://cdn.mos.cms.futurecdn.net/z78DAFmPAVeD6jmzUYXvin.jpg");
+    z-index:2;
+  }
+
+  #slide3:before {
+    background-image: url("https://thunderdungeon.com/wp-content/uploads/2024/04/confusing-perspective-3-3-25-2024.jpg");
+    transform: translateZ(-.5px) scale(1.5);
+  }
+
+  #slide4 {
+    background-image: url("https://i.pinimg.com/474x/46/dd/5d/46dd5ddd92bed04ccdc03486183b97d0.jpg");
+    z-index:2;
+  }
+
+</style>
+
+</head>
+<body>
+
+  <div id="title" class="slide header">
+    <h1>       </h1>
+    <img src="https://pleated-jeans.com/wp-content/uploads/2024/03/confusing-perspective-pictures-1.jpg">
+    <img src="https://sites.bu.edu/ombs/files/2016/03/Eye-Benders-Shutterstock1.jpg"> 
+  </div>
+
+  <div id="slide1" class="slide">
+    <div class="title">
+    </div>
+    <img src="https://static.tumblr.com/od3ztre/G2doc8jzs/claes-oldenberg.jpg">
+    <img src="https://i.imgur.com/XJZMQy5.jpg"> 
+  </div>
+
+  <div id="slide2" class="slide">
+    <div class="title">
+    </div>
+    <img src="https://cdn.architecturendesign.net/wp-content/uploads/2023/06/AD-Optical-Illusions-Confusing-Perspective-19.jpg">
+    <img src="https://i.imgur.com/kUAA47u.jpg"> 
+  </div>
+
+  <div id="slide3" class="slide">
+    <div class="title">
+    </div>
+    <img src="https://i.imgur.com/lFJOBha.jpeg">
+    <img src="https://pleated-jeans.com/wp-content/uploads/2025/09/unedited-optical-illusion-pictures-taken-from-very-confusing-perspectives-8.jpg"> 
+  </div>
+
+  <div id="slide4" class="slide header">
+      <h1>    </h1>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJVgk44NKOvuGNUtlLu8U19GYgtSNK8W4wvQ_ZDCx6z8_AplQ13F_zrcgKcQ3W_h_LHTg&usqp=CAU">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Impossible_cube_illusion_angle.svg/250px-Impossible_cube_illusion_angle.svg.png"> 
+  </div>
+
+</body>
+</html>
+
+
+
+
+
+
+
